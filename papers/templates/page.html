@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
           integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-    <title>日本所属の言語処理トップカンファレンス論文 ({{ year }}年)</title>
+    <title>日本所属の言語処理論文被引用数ランキング ({{ year }}年)</title>
 </head>
 <body>
 
@@ -19,21 +19,21 @@
 <div class="container bs-docs-container">
     <div class="row">
 
-        <h1>日本所属の言語処理トップカンファレンス論文 ({{ year }}年)</h1>
+        <h1>日本所属の言語処理論文被引用数ランキング ({{ year }}年)</h1>
         <p class="text-right">最終更新: {{ utcnow }}</p>
 
         <div>
             <p>日本の組織を所属とする者が、{{ year }}年に言語処理のトップカンファレンスもしくはトップ論文誌で発表した論文一覧です (<a href="2021.html">2021年版</a>、<a
                     href="2020.html">2020年版</a>、<a href="2019.html">2019年版</a>、<a href="2018.html">2018年版</a>)。対象は
-                TACL、EACL、NAACL、ACL-IJCNLP、EMNLP です
-                (Findings は除外)。Industry/Student/Demo 論文も含みます。</p>
+                TACL、ACL、EMNLP、NAACL、EACL です
+                (Findings は除外)。Industry、Student、Demo 論文も含みます。</p>
             <p>方針：</p>
             <ul>
                 <li>著者が複数の場合は、第一著者に被引用数の半分を配分し、残りの半分は以降の著者で等分。</li>
                 <li>一人の著者に複数の所属がある場合は等分。</li>
                 <li>論文データは<a href="https://murawaki.org/misc/japan-nlp-{{ year }}.html">村脇先生のブログ</a>に機械的に従います。</li>
                 <li>被引用数データは <a href="https://api.semanticscholar.org/graph/v1">Semantic Scholar</a> より。</li>
-                <li>毎週月曜日朝６時に自動的に更新。</li>
+                <li>毎週月曜日朝６時に自動更新されます。</li>
             </ul>
         </div>
 
@@ -61,10 +61,10 @@
                 </div>
             </div>
 
-            <h2>論文</h2>
+            <h2>論文ごとの被引用数</h2>
 
             <div class="container-fluid" id="papers">
-                <div>
+                <div class="col-md-12">
                     <table class="table table-hover">
                         <thead>
                         <tr>
