@@ -29,7 +29,8 @@
                 (Findings は除外)。Industry、Student、Demo 論文も含みます。</p>
             <p>方針：</p>
             <ul>
-                <li>著者が複数の場合は、第一著者に被引用数の半分を配分し、残りの半分は以降の著者で等分。</li>
+                <li>被引用数A：著者が複数の場合は、第一著者に被引用数の半分を配分し、残りの半分は以降の著者で等分。</li>
+                <li>被引用数F：著者数問わず、第一著者に被引用数の全部を配分します。</li>
                 <li>一人の著者に複数の所属がある場合は等分。</li>
                 <li>論文データは<a href="https://murawaki.org/misc/japan-nlp-{{ year }}.html">村脇先生のブログ</a>に機械的に従います。</li>
                 <li>被引用数データは <a href="https://api.semanticscholar.org/graph/v1">Semantic Scholar</a> より。</li>
@@ -45,14 +46,16 @@
                     <table class="table table-hover">
                         <thead>
                         <tr>
-                            <th>被引用数</th>
+                            <th>被引用数A</th>
+                            <th>被引用数F</th>
                             <th>所属</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {% for name,citation in affiliations %}
+                        {% for name,avg,first in affiliations %}
                             <tr>
-                                <td style="vertical-align: middle;">{{ citation }}</td>
+                                <td style="vertical-align: middle;">{{ avg }}</td>
+                                <td style="vertical-align: middle;">{{ first }}</td>
                                 <td style="vertical-align: middle;">{{ name }}</td>
                             </tr>
                         {% endfor %}

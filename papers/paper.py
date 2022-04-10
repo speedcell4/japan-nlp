@@ -64,7 +64,8 @@ def fetch_citation(year):
     data, ignores = fetch_papers(year)
     data = fetch_id(data)
 
-    counter = Counter()
+    avg = Counter()
+    first = Counter()
 
     papers = []
     for index, (category, authors, title, id, url) in enumerate(data):
@@ -86,19 +87,20 @@ def fetch_citation(year):
             if index == 0:
                 num_afflictions = len(afflictions)
                 for affliction in afflictions:
-                    counter[affliction] += citation / num_afflictions / (2 if num_authors > 1 else 1)
+                    avg[affliction] += citation / num_afflictions / (2 if num_authors > 1 else 1)
+                    first[affliction] += citation / num_afflictions
             else:
                 num_afflictions = len(afflictions)
                 for affliction in afflictions:
-                    counter[affliction] += citation / num_afflictions / 2 / (num_authors - 1)
+                    avg[affliction] += citation / num_afflictions / 2 / (num_authors - 1)
 
     papers = sorted(papers, key=lambda item: item[0], reverse=True)
-    afflictions = [
-        (name, round(affliction, ndigits=1))
-        for name, affliction in counter.most_common()
+    affiliations = [
+        (name, round(citation * 1.0, ndigits=1), round(first[name] * 1.0, ndigits=1))
+        for name, citation in avg.most_common()
         if name not in ignores
     ]
-    return papers, afflictions
+    return papers, affiliations
 
 
 def render_html(year: int, folder: str = 'docs', directory: Path = Path(__file__).parent):
