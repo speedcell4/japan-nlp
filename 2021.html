@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <title>日本所属の言語処理トップカンファレンス論文 (2021年)</title>
+</head>
+<body>
+
+<script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+
+<div class="container bs-docs-container">
+    <div class="row">
+
+        <h1>日本所属の言語処理トップカンファレンス論文 (2021年)</h1>
+        <p class="text-right">最終更新: 2022-04-10 19:36:29.560376+09:00</p>
+
+        <div>
+            <p>日本の組織を所属とする者が、2021年に言語処理のトップカンファレンスもしくはトップ論文誌で発表した論文一覧です (<a href="2021.html">2021年版</a>、<a
+                    href="2020.html">2020年版</a>、<a href="2019.html">2019年版</a>、<a href="2018.html">2018年版</a>)。対象は
+                TACL、EACL、NAACL、ACL-IJCNLP、EMNLP です
+                (Findings は除外)。Industry/Student/Demo 論文も含みます。</p>
+            <p>方針：</p>
+            <ul>
+                <li>著者が複数の場合は、第一著者に被引用数の半分を配分し、残りの半分は以降の著者で等分。</li>
+                <li>一人の著者に複数の所属がある場合は等分。</li>
+                <li>論文データは<a href="https://murawaki.org/misc/japan-nlp-2021.html">村脇先生のブログ</a>に機械的に従います。</li>
+                <li>被引用数データは <a href="https://api.semanticscholar.org/graph/v1">Semantic Scholar</a> より。</li>
+                <li>毎週月曜日朝６時に自動的に更新。</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>所属ごとの被引用数</h2>
+
+            <div class="container-fluid" id="citations">
+                <div class="col-md-5">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>被引用数</th>
+                            <th>所属</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">29.8</td>
+                                <td style="vertical-align: middle;">NICT</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">20.3</td>
+                                <td style="vertical-align: middle;">理研</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">17.0</td>
+                                <td style="vertical-align: middle;">東工大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">14.4</td>
+                                <td style="vertical-align: middle;">都立大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">12.3</td>
+                                <td style="vertical-align: middle;">東北大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">10.7</td>
+                                <td style="vertical-align: middle;">京大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">10.3</td>
+                                <td style="vertical-align: middle;">東大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">7.9</td>
+                                <td style="vertical-align: middle;">NII</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">5.6</td>
+                                <td style="vertical-align: middle;">お茶大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">5.0</td>
+                                <td style="vertical-align: middle;">Sony</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">5.0</td>
+                                <td style="vertical-align: middle;">早大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">4.5</td>
+                                <td style="vertical-align: middle;">Studio Ousia</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">3.4</td>
+                                <td style="vertical-align: middle;">名大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2.0</td>
+                                <td style="vertical-align: middle;">日立</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2.0</td>
+                                <td style="vertical-align: middle;">NAIST</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1.9</td>
+                                <td style="vertical-align: middle;">Langsmith</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1.8</td>
+                                <td style="vertical-align: middle;">慶応大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1.4</td>
+                                <td style="vertical-align: middle;">富士通研</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1.2</td>
+                                <td style="vertical-align: middle;">山梨大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1.1</td>
+                                <td style="vertical-align: middle;">NTT</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1.1</td>
+                                <td style="vertical-align: middle;">阪大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.9</td>
+                                <td style="vertical-align: middle;">産総研</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.8</td>
+                                <td style="vertical-align: middle;">JAIST</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.8</td>
+                                <td style="vertical-align: middle;">KDDI総合研究所</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.7</td>
+                                <td style="vertical-align: middle;">富士ゼロックス</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.7</td>
+                                <td style="vertical-align: middle;">Yahoo</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.6</td>
+                                <td style="vertical-align: middle;">国語研</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.5</td>
+                                <td style="vertical-align: middle;">農工大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.5</td>
+                                <td style="vertical-align: middle;">オムロン サイニックエックス</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.5</td>
+                                <td style="vertical-align: middle;">豊田工大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.5</td>
+                                <td style="vertical-align: middle;">リクルート</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.4</td>
+                                <td style="vertical-align: middle;">愛媛大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.1</td>
+                                <td style="vertical-align: middle;">ウェザーニューズ</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">同志社大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">サイバーエージェント</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">群馬大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">創価大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">総研大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">NEC</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">PFN</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">Insight Edge</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">朝日新聞</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">甲南大</td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0.0</td>
+                                <td style="vertical-align: middle;">JST</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h2>論文</h2>
+
+            <div class="container-fluid" id="papers">
+                <div>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>被引用数</th>
+                            <th>種別</th>
+                            <th>著者 (所属)</th>
+                            <th>論文表題</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">26</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Benjamin Marie (NICT)<br> Atsushi Fujita (NICT)<br> Raphael Rubino (NICT)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.566/">Scientific Credibility of Machine Translation Research: A Meta-Evaluation of 769 Papers</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">24</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Emanuele Bugliarello (コペンハーゲン大)<br> Ryan Cotterell (ケンブリッジ大; ETHチューリッヒ)<br> Naoaki Okazaki (東工大)<br> Desmond Elliott (コペンハーゲン大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00408/107279/Multimodal-Pretraining-Unmasked-A-Meta-Analysis">Multimodal Pretraining Unmasked: A Meta-Analysis and a Unified Framework of Vision-and-Language BERTs</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">18</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Ikuya Yamada (Studio Ousia; 理研)<br> Akari Asai (ワシントン大)<br> Hannaneh Hajishirzi (ワシントン大; Allen Institute for AI)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-short.123/">Efficient Passage Retrieval with Hashing for Open-domain Question Answering</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">16</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Hao Cheng (Microsoft Research)<br> Xiaodong Liu (Microsoft Research)<br> Lis Pereira (お茶大)<br> Yaoliang Yu (ウォータールー大; Vector Institute)<br> Jianfeng Gao (Microsoft Research)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.85/">Posterior Differential Regularization with f-divergence for Improving Model Robustness</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">15</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Masahiro Kaneko (都立大)<br> Danushka Bollegala (リバプール大; Amazon)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.107/">Debiasing Pre-trained Contextualised Embeddings</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">12</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Benjamin Heinzerling (理研; 東北大)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.153/">Language Models as Knowledge Bases: On Entity Representations, Storage Capacity, and Paraphrased Queries</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">10</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Hiroshi Iida (Sony)<br> Dung Thai (UMass Amherst)<br> Varun Manjunatha (Adobe)<br> Mohit Iyyer (Umass Amherst)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.270/">TABBIE: Pretrained Representations of Tabular Data</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">9</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Nikita Nangia (ニューヨーク大)<br> Saku Sugawara (NII)<br> Harsh Trivedi (Stony Brook大)<br> Alex Warstadt (ニューヨーク大)<br> Clara Vania (Amazon)<br> Samuel R. Bowman (ニューヨーク大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.98/">What Ingredients Make for an Effective Crowdsourcing Protocol for Difficult NLU Data Collection Tasks?</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">8</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Sho Takase (東工大)<br> Shun Kiyono (理研; 東北大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.460/">Rethinking Perturbations in Encoder-Decoders for Fast Training</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">7</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Hitomi Yanaka (理研)<br> Koji Mineshima (慶応大)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.78/">Exploring Transitivity in Neural NLI Models through Veridicality</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">6</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Masahiro Kaneko (都立大)<br> Danushka Bollegala (リバプール大; Amazon)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.16/">Dictionary-based Debiasing of Pre-trained Word Embeddings</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">6</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Hirofumi Inaguma (京大)<br> Tatsuya Kawahara (京大)<br> Shinji Watanabe (John Hopkins大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.151/">Searchable Hidden Intermediates for End-to-End Models of Decomposable Sequence Tasks</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">6</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Lis Pereira (お茶大)<br> Xiaodong Liu (Microsoft Research)<br> Hao Cheng (Microsoft Research)<br> Hoifung Poon (Microsoft Research)<br> Jianfeng Gao (Microsoft Research)<br> Ichiro Kobayashi (お茶大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.424/">Targeted Adversarial Training for Natural Language Understanding</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">6</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Lya Hulliyyatus Suadaa (東工大)<br> Hidetaka Kamigaito (東工大)<br> Kotaro Funakoshi (東工大)<br> Manabu Okumura (東工大)<br> Hiroya Takamura (東工大; 産総研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.115/">Towards Table-to-Text Generation with Numerical Reasoning</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">6</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Tatsuki Kuribayashi (東北大; Langsmith)<br> Yohei Oseki (東大; 理研)<br> Takumi Ito (東北大; Langsmith)<br> Ryo Yoshida (東大)<br> Masayuki Asahara (国語研)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.405/">Lower Perplexity is Not Always Human-Like</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">5</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Rob van der Goot (ITU)<br> Ibrahim Sharaf (Factmata)<br> Aizhan Imankulova (都立大)<br> Ahmet Üstün (フローニンゲン大)<br> Marija Stepanović (ITU)<br> Alan Ramponi (トレント大; COSBI)<br> Siti Oryza Khairunnisa (都立大)<br> Mamoru Komachi (都立大)<br> Barbara Plank (ITU)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.197/">From Masked Language Modeling to Translation: Non-English Auxiliary Tasks Improve Zero-shot Spoken Language Understanding</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">5</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Haipeng Sun (ハルピン工業大; JD)<br> Rui Wang (上海交通大)<br> Kehai Chen (NICT)<br> Masao Utiyama (NICT)<br> Eiichiro Sumita (NICT)<br> Tiejun Zhao (ハルピン工業大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.311/">Self-Training for Unsupervised Neural Machine Translation in Unbalanced Training Data Scenarios</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">4</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Saku Sugawara (NII)<br> Pontus Stenetorp (UCL)<br> Akiko Aizawa (NII)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.137/">Benchmarking Machine Reading Comprehension: A Psychological Perspective</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">4</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Fenia Christopoulou (マンチェスター大)<br> Makoto Miwa (豊田工大; 産総研)<br> Sophia Ananiadou (マンチェスター大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.2/">Distantly Supervised Relation Extraction with Sentence Reconstruction and Knowledge Base Priors</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">4</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Tatsuya Ide (早大)<br> Daisuke Kawahara (早大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-srw.15/">Multi-Task Learning of Generation and Classification for Emotion-Aware Dialogue Response Generation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">3</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Alon Jacovi (Bar Ilan)<br> Gang Niu (理研)<br> Yoav Goldberg (Bar Ilan; Allen-Israel)<br> Masashi Sugiyama (理研; 東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.47/">Scalable Evaluation and Improvement of Document Set Expansion via Neural Positive-Unlabeled Learning</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">3</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Danushka Bollegala (リバプール大; Amazon)<br> Huda Hakami (ターイフ大)<br> Yuichi Yoshida (NII)<br> Ken-ichi Kawarabayashi (NII)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.133/">RelWalk - A Latent Variable Model Approach to Knowledge Graph Embedding</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">3</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Junfeng Jiang (東大)<br> An Wang (東工大)<br> Akiko Aizawa (NII)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.170/">Attention-based Relational Graph Convolutional Network for Target-Oriented Opinion Words Extraction</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">3</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Seiichiro Kondo (都立大)<br> Kengo Hotate (都立大)<br> Tosho Hirasawa (都立大)<br> Masahiro Kaneko (都立大)<br> Mamoru Komachi (都立大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-srw.18/">Sentence Concatenation Approach to Data Augmentation for Neural Machine Translation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">3</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Yi Yu (京大)<br> Adam Jatowt (インスブルック大)<br> Antoine Doucet (ラロシェル大)<br> Kazunari Sugiyama (京大)<br> Masatoshi Yoshikawa (京大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.32/">Multi-TimeLine Summarization (MTLS): Improving Timeline Summarization by Generating Multiple Summaries</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">3</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Kazutoshi Shinoda (東大; NII)<br> Saku Sugawara (NII)<br> Akiko Aizawa (東大; NII)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.21/">Improving the Robustness of QA Models to Challenge Sets with Variational Question-Answer Pair Generation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Masaru Isonuma (東大)<br> Junichiro Mori (東大; 理研)<br> Danushka Bollegala (リバプール大)<br> Ichiro Sakata (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00406/107204/Unsupervised-Abstractive-Opinion-Summarization-by">Unsupervised Abstractive Opinion Summarization by Generating Sentences with Tree-Structured Topic Guidance</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Chunpeng Ma (富士通研)<br> Aili Shen (メルボルン大)<br> Hiyori Yoshikawa (富士通研)<br> Tomoya Iwakura (富士通研)<br> Daniel Beck (メルボルン大)<br> Timothy Baldwin (メルボルン大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.4/">On the (In)Effectiveness of Images for Text Classification</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Ukyo Honda (NAIST; 理研)<br> Yoshitaka Ushiku (オムロン サイニックエックス)<br> Atsushi Hashimoto (オムロン サイニックエックス)<br> Taro Watanabe (NAIST)<br> Yuji Matsumoto (理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.323/">Removing Word-Level Spurious Alignment between Images and Pseudo-Captions in Unsupervised Image Captioning</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Naoki Kobayashi (東工大)<br> Tsutomu Hirao (NTT)<br> Hidetaka Kamigaito (東工大)<br> Manabu Okumura (東工大)<br> Masaaki Nagata (NTT)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.127/">Improving Neural RST Parsing Model with Silver Agreement Subtrees</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Honai Ueoka (京大)<br> Yugo Murawaki (京大)<br> Sadao Kurohashi (京大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.433/">Frustratingly Easy Edit-based Linguistic Steganography with a Masked Language Model</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Yiran Wang (NICT)<br> Hiroyuki Shindo (NAIST)<br> Yuji Matsumoto (理研)<br> Taro Watanabe (NAIST)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.275/">Nested Named Entity Recognition via Explicitly Excluding the Influence of the Best Path</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Jiajia Tang (杭州大)<br> Kang Li (杭州大)<br> Xuanyu Jin (杭州大)<br> Andrzej Cichocki (Skoltech; PAN)<br> Qibin Zhao (理研)<br> Wanzeng Kong (杭州大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.412/">CTFN: Hierarchical Learning for Multimodal Sentiment Analysis Using Coupled-Translation Fusion Network</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Hayato Tsukagoshi (名大)<br> Ryohei Sasano (名大)<br> Koichi Takeda (名大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-short.52/">DefSent: Sentence Embeddings using Definition Sentences</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">2</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Zhiwei Zhang (杭州電子大; 山梨大)<br> Jiyi Li (山梨大)<br> Fumiyo Fukumoto (山梨大)<br> Yanming Ye (杭州電子大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.290/">Abstract, Rationale, Stance: A Joint Model for Scientific Claim Verification</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Atsuki Yamaguchi (日立)<br> Kosui Iwasa (農工大)<br> Katsuhide Fujita (農工大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.63/">Dialogue Act-based Breakdown Detection in Negotiation Dialogues</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Ryuji Kano (富士ゼロックス; 東工大)<br> Takumi Takahashi (富士ゼロックス)<br> Toru Nishino (富士ゼロックス)<br> Motoki Taniguchi (富士ゼロックス)<br> Tomoki Taniguchi (富士ゼロックス)<br> Tomoko Ohkuma (富士ゼロックス)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.119/">Quantifying Appropriateness of Summarization Data for Curriculum Learning</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Soichiro Murakami (東工大)<br> Sora Tanaka (東工大)<br> Masatsugu Hangyo (ウェザーニューズ)<br> Hidetaka Kamigaito (東工大)<br> Kotaro Funakoshi (東工大)<br> Hiroya Takamura (東工大; 産総研)<br> Manabu Okumura (東工大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.125/">Generating Weather Comments from Meteorological Simulations</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Rei Miyata (名大)<br> Atsushi Fujita (NICT)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.132/">Understanding Pre-Editing for Black-Box Neural Machine Translation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Makoto Morishita (NTT; 東北大)<br> Jun Suzuki (東北大)<br> Tomoharu Iwata (NTT)<br> Masaaki Nagata (NTT)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.214/">Context-aware Neural Machine Translation with Mini-batch Embedding</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Hiroaki Ozaki (日立)<br> Gaku Morio (日立)<br> Terufumi Morishita (日立)<br> Toshinori Miyoshi (日立)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.221/">Project-then-Transfer: Effective Two-stage Cross-lingual Transfer for Semantic Dependency Parsing</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Yin Jou Huang (京大)<br> Sadao Kurohashi (京大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.265/">Extractive Summarization Considering Discourse and Coreference Relations based on Heterogeneous Graph</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">DEMO</td>
+                                <td style="vertical-align: middle;"> Vu Tran (JAIST)<br> Van-Hien Tran (NAIST)<br> Phuong Nguyen (JAIST)<br> Chau Nguyen (JAIST)<br> Ken Satoh (NII)<br> Yuji Matsumoto (理研)<br> Minh Nguyen (JAIST)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-demos.4/">CovRelex: A COVID-19 Retrieval System with Relation Extraction</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Takeshi Kojima (東大)<br> Yusuke Iwasawa (東大)<br> Yutaka Matsuo (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-srw.23/">Making Use of Latent Space in Language GANs for Generating Diverse Text without Pre-training</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Motoi Omachi (Yahoo)<br> Yuya Fujita (Yahoo)<br> Shinji Watanabe (John Hopkins大)<br> Matthew Wiesner (John Hopkins大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.149/">End-to-end ASR to jointly predict transcriptions and linguistic annotations</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Shohei Higashiyama (NICT; NAIST)<br> Masao Utiyama (NICT)<br> Taro Watanabe (NAIST)<br> Eiichiro Sumita (NICT)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.438/">User-Generated Text Corpus for Evaluating Japanese Morphological Analysis and Lexical Normalization</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Amane Sugiyama (東大)<br> Naoki Yoshinaga (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.461/">Context-aware Decoder for Neural Machine Translation using a Target-side Document-Level Language Model</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Hoang-Quoc Nguyen-Son (KDDI総合研究所)<br> Tran Phuong Thao (東大)<br> Seira Hidano (KDDI総合研究所)<br> Ishita Gupta (IIT)<br> Shinsaku Kiyomoto (KDDI総合研究所)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.462/">Machine Translated Text Detection Through Text Similarity with Round-Trip Translation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Tetsuya Sakai (早大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.214/">Evaluating Evaluation Measures for Ordinal Classification and Ordinal Quantification</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Kosuke Yamada (名大)<br> Ryohei Sasano (名大; 理研)<br> Koichi Takeda (名大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-short.102/">Semantic Frame Induction using Masked Word Embeddings and Two-Step Clustering</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Johannes Mario Meissner (東大)<br> Napat Thumwanit (東大)<br> Saku Sugawara (NII)<br> Akiko Aizawa (東大; NII)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-short.109/">Embracing Ambiguity: Shifting the Training Target of NLI Models</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Weiqi Gu (京大)<br> Haiyue Song (京大)<br> Chenhui Chu (京大)<br> Sadao Kurohashi (京大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.9/">Video-guided Machine Translation with Spatial Hierarchical Attention Network</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Sosuke Nishikawa (東大)<br> Ryokan Ri (東大)<br> Yoshimasa Tsuruoka (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.17/">Data Augmentation with Unsupervised Machine Translation Improves the Structural Similarity of Cross-lingual Word Embeddings</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Machel Reid (東大)<br> Junjie Hu (CMU)<br> Graham Neubig (CMU)<br> Yutaka Matsuo (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.99/">AfroMT: Pretraining Strategies and Reproducible Benchmarks for Translation of 8 African Languages</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Han Huang (阪大)<br> Tomoyuki Kajiwara (愛媛大)<br> Yuki Arase (阪大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.194/">Definition Modelling for Appropriate Specificity</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Atsuki Yamaguchi (日立)<br> George Chrysostomou (シェフィールド大)<br> Katerina Margatina (シェフィールド大)<br> Nikolaos Aletras (シェフィールド大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.249/">Frustratingly Simple Pretraining Alternatives to Masked Language Modeling</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Zhuosheng Zhang (上海交通大; 上海交通大; 上海交通大)<br> Siru Ouyang (上海交通大; 上海交通大; 上海交通大)<br> Hai Zhao (上海交通大; 上海交通大; 上海交通大)<br> Masao Utiyama (NICT)<br> Eiichiro Sumita (NICT)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.299/">Smoothing Dialogue States for Open Conversational Machine Reading</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Ryuto Konno (リクルート)<br> Shun Kiyono (理研; 東北大)<br> Yuichiroh Matsubayashi (東北大; 理研)<br> Hiroki Ouchi (NAIST; 理研)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.308/">Pseudo Zero Pronoun Resolution Improves Zero Anaphora Resolution</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Goro Kobayashi (東北大)<br> Tatsuki Kuribayashi (東北大; Langsmith)<br> Sho Yokoi (東北大; 理研)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.373/">Incorporating Residual and Normalization Layers into Analysis of Masked Language Models</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">1</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Nattapong Tiyajamorn (東大)<br> Tomoyuki Kajiwara (愛媛大)<br> Yuki Arase (阪大)<br> Makoto Onizuka (阪大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.612/">Language-agnostic Representation from Multilingual Sentence Encoders for Cross-lingual Similarity Estimation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Takuma Udagawa (東大)<br> Akiko Aizawa (東大; NII)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00409/107278/Maintaining-Common-Ground-in-Dynamic-Environments">Maintaining Common Ground in Dynamic Environments</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Lya Hulliyyatus Suadaa (東工大)<br> Hidetaka Kamigaito (東工大)<br> Manabu Okumura (東工大)<br> Hiroya Takamura (東工大; 産総研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.267/">Metric-Type Identification for Multi-Level Header Numerical Tables in Scientific Papers</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Diptesh Kanojia (IIT Bomday; IITB-Monash Research Academy; モナシュ大)<br> Prashant Sharma (日立)<br> Sayali Ghodekar (RingCentral)<br> Pushpak Bhattacharyya (IIT Bombay)<br> Gholamreza Haffari (モナシュ大)<br> Malhar Kulkarni (IIT Bombay)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.288/">Cognition-aware Cognate Detection</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Chenlong Hu (東工大)<br> Yukun Feng (東工大)<br> Hidetaka Kamigaito (東工大)<br> Hiroya Takamura (東工大; 産総研)<br> Manabu Okumura (東工大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.296/">One-class Text Classification with Multi-modal Deep Support Vector Data Description</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Kenichi Iwatsuki (東大)<br> Akiko Aizawa (NII; 東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.304/">Communicative-Function-Based Sentence Classification for Construction of an Academic Formulaic Expression Database</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Qin Dai (東北大)<br> Naoya Inoue (ストーニーブルック大)<br> Ryo Takahashi (東北大; 理研)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-main.321/">Two Training Strategies for Improving Relation Extraction over Universal Graph</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">DEMO</td>
+                                <td style="vertical-align: middle;"> Hidetaka Kamigaito (東工大)<br> Jingun Kwon (東工大)<br> Young-In Song (Naver)<br> Manabu Okumura (東工大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-demos.27/">A New Surprise Measure for Extracting Interesting Relationships between Persons</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Ayato Toyokuni (京大; 理研)<br> Sho Yokoi (東北大; 理研)<br> Hisashi Kashima (京大; 理研)<br> Makoto Yamada (京大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://www.aclweb.org/anthology/2021.eacl-srw.1/">Computationally Efficient Wasserstein Loss for Structured Labels</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Tomoyuki Kajiwara (愛媛大)<br> Chenhui Chu (京大)<br> Noriko Takemura (阪大)<br> Yuta Nakashima (阪大)<br> Hajime Nagahara (阪大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.169/">WRIME: A New Dataset for Emotional Intensity Estimation with Subjective and Objective Annotations</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Pride Kavumba (東北大; 理研)<br> Benjamin Heinzerling (理研; 東北大)<br> Ana Brassard (理研; 東北大)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.304/">Learning to Learn to be Right for the Right Reasons</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Hirokazu Kiyomaru (京大)<br> Sadao Kurohashi (京大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-main.442/">Contextualized and Generalized Sentence Representations by Contrastive Self-Supervised Learning: A Case Study on Discourse Relation Analysis</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Aomi Koyama (都立大)<br> Kengo Hotate (都立大)<br> Masahiro Kaneko (都立大)<br> Mamoru Komachi (都立大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-srw.16/">Comparison of Grammatical Error Correction Using Back-Translation Models</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Kazuki Akiyama (愛媛大)<br> Akihiro Tamura (同志社大)<br> Takashi Ninomiya (愛媛大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-srw.20/">Hie-BART: Document Summarization with Hierarchical BART</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">DEMO</td>
+                                <td style="vertical-align: middle;"> Hidetaka Kamigaito (東工大)<br> Peinan Zhang (サイバーエージェント)<br> Hiroya Takamura (産総研)<br> Manabu Okumura (東工大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.naacl-industry.32/">An Empirical Study of Generating Texts for Search Engine Advertising</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Jinyu Guo (北京郵電大)<br> Kai Shuang (北京郵電大)<br> Jijie Li (北京郵電大)<br> Zihan Wang (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.12/">Dual Slot Selector via Local Reliability Verification for Dialogue State Tracking</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Jong-Hoon Oh (NICT)<br> Ryu Iida (NICT; NAIST)<br> Julien Kloetzer (NICT)<br> Kentaro Torisawa (NICT; NAIST)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.164/">BERTAC: Enhancing Transformer-based Language Models with Adversarially Pretrained Convolutional Neural Networks</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Zhuoyuan Mao (京大)<br> Prakhar Gupta (EPFL)<br> Chenhui Chu (京大)<br> Martin Jaggi (EPFL)<br> Sadao Kurohashi (京大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.226/">Lightweight Cross-Lingual Sentence Representation Learning</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Hidetaka Kamigaito (東工大)<br> Katsuhiko Hayashi (群馬大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-long.429/">Unified Interpretation of Softmax Cross-Entropy and Negative Sampling: With Case Study for Knowledge Graph Embedding</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Sora Ohashi (阪大)<br> Junya Takayama (阪大)<br> Tomoyuki Kajiwara (愛媛大)<br> Yuki Arase (阪大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-short.105/">Distinct Label Representations for Few-Shot Text Classification</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">DEMO</td>
+                                <td style="vertical-align: middle;"> Daiki Kimura (IBM)<br> Subhajit Chaudhury (IBM)<br> Masaki Ono (IBM)<br> Michiaki Tatsubori (IBM)<br> Don Joven Agravante (IBM)<br> Asim Munawar (IBM)<br> Akifumi Wachi (IBM)<br> Ryosuke Kohita (IBM)<br> Alexander Gray (IBM)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-demo.27/">LOA: Logical Optimal Actions for Text-based Interaction Games</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Ryo Ueda (東大)<br> Koki Washio (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.6/">On the Relationship between Zipf’s Law of Abbreviation and Interfering Noise in Emergent Languages</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Jules Samaran (PSL)<br> Noa Garcia (阪大)<br> Mayu Otani (サイバーエージェント)<br> Chenhui Chu (京大)<br> Yuta Nakashima (阪大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.8/">Attending Self-Attention: A Case Study of Visually Grounded Supervision in Vision-and-Language Transformers</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Seiichi Inoue (都立大)<br> Taichi Aida (都立大)<br> Mamoru Komachi (都立大)<br> Manabu Asai (創価大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.15/">Modeling Text using the Continuous Space Topic Model with Pre-Trained Word Embeddings</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Sora Kadotani (阪大)<br> Tomoyuki Kajiwara (愛媛大)<br> Yuki Arase (阪大)<br> Makoto Onizuka (阪大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.24/">Edit Distance Based Curriculum Learning for Paraphrase Generation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Shintaro Harada (NAIST)<br> Taro Watanabe (NAIST)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.33/">Neural Machine Translation with Synchronous Latent Phrase Structure</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Sei Iwata (NAIST)<br> Taro Watanabe (NAIST)<br> Masaaki Nagata (NII)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.34/">Zero Pronouns Identification based on Span prediction</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">STUDENT</td>
+                                <td style="vertical-align: middle;"> Hiroyuki Deguchi (NAIST)<br> Akihiro Tamura (同志社大)<br> Takashi Ninomiya (愛媛大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.acl-srw.36/">Synchronous Syntactic Attention for Transformer Neural Machine Translation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Taichi Iki (NII; 総研大)<br> Akiko Aizawa (NII; 総研大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.167/">Effect of Visual Extensions on Natural Language Understanding in Vision-and-Language Models</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Ying Zhang (東工大)<br> Hidetaka Kamigaito (東工大)<br> Manabu Okumura (東工大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.188/">A Language Model-based Generative Classifier for Sentence-level Discourse Parsing</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Kunihiro Takeoka (NEC)<br> Kosuke Akimoto (NEC)<br> Masafumi Oyamada (NEC)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.217/">Low-resource Taxonomy Enrichment with Pretrained Language Models</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Ryo Yoshida (東大)<br> Hiroshi Noji (産総研)<br> Yohei Oseki (東大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.235/">Modeling Human Sentence Processing with Left-Corner Recurrent Neural Network Grammars</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Zuchao Li (上海交通大; 上海交通大; 上海交通大)<br> Masao Utiyama (NICT)<br> Eiichiro Sumita (NICT)<br> Hai Zhao (上海交通大; 上海交通大; 上海交通大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.261/">Unsupervised Neural Machine Translation with Universal Grammar</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Shun Kiyono (理研; 東北大)<br> Sosuke Kobayashi (東北大; PFN)<br> Jun Suzuki (東北大; 理研)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.266/">SHAPE: Shifted Absolute Position Embedding for Transformers</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Jingun Kwon (東工大)<br> Naoki Kobayashi (東工大)<br> Hidetaka Kamigaito (東工大)<br> Manabu Okumura (東工大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.330/">Considering Nested Tree Structure in Sentence Extractive Summarization with Pre-trained Transformer</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Kosuke Yamada (名大)<br> Yuta Hitomi (Insight Edge)<br> Hideaki Tamori (朝日新聞)<br> Ryohei Sasano (名大)<br> Naoaki Okazaki (東工大)<br> Kentaro Inui (東北大; 理研)<br> Koichi Takeda (名大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.335/">Transformer-based Lexically Constrained Headline Generation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Naoya Inoue (ストーニーブルック大; 理研)<br> Harsh Trivedi (ストーニーブルック大)<br> Steven Sinha (ストーニーブルック大)<br> Niranjan Balasubramanian (ストーニーブルック大)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.490/">Summarize-then-Answer: Generating Concise Explanations for Multi-hop Reading Comprehension</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> James O’Neill (リバプール大)<br> Polina Rozenshtein (Amazon)<br> Ryuichi Kiryo (Amazon)<br> Motoko Kubota (Amazon)<br> Danushka Bollegala (Amazon; リバプール大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.568/">I Wish I Would Have Loved This One, But I Didn’t – A Multilingual Dataset for Counterfactual Detection in Product Review</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">LONG</td>
+                                <td style="vertical-align: middle;"> Kazuaki Hanawa (理研; 東北大)<br> Ryo Nagata (甲南大; JST)<br> Kentaro Inui (東北大; 理研)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.766/">Exploring Methods for Generating Feedback Comments for Writing Learning</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">SHORT</td>
+                                <td style="vertical-align: middle;"> Yoshihide Kato (名大)<br> Shigeki Matsubara (名大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-main.826/">A New Representation for Span-based CCG Parsing</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">DEMO</td>
+                                <td style="vertical-align: middle;"> Zuchao Li (上海交通大; 上海交通大; 上海交通大)<br> Kevin Parnow (上海交通大; 上海交通大; 上海交通大)<br> Masao Utiyama (NICT)<br> Eiichiro Sumita (NICT)<br> Hai Zhao (上海交通大; 上海交通大; 上海交通大)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-demo.1/">MiSS: An Assistant for Multi-Style Simultaneous Translation</a></td>
+                            </tr>
+                        
+                            <tr>
+                                <td style="vertical-align: middle;">0</td>
+                                <td style="vertical-align: middle;">DEMO</td>
+                                <td style="vertical-align: middle;"> Shunyo Kawamoto (サイバーエージェント)<br> Yu Sawai (サイバーエージェント)<br> Kohei Wakimoto (サイバーエージェント)<br> Peinan Zhang (サイバーエージェント)<br> </td>
+                                <td style="vertical-align: middle;"><a href="https://aclanthology.org/2021.emnlp-demo.41/">FAST: Fast Annotation tool for SmarT devices</a></td>
+                            </tr>
+                        
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
