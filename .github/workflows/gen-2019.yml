@@ -1,0 +1,30 @@
+name: Generate 2019
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 13 * * 0"
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout develop
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: python3 -m pip install -r requirements.txt
+      - name: Build
+        run: |
+          python3 -m papers --year 2019
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          keep_files: true
