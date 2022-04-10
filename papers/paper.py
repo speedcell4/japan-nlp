@@ -18,7 +18,7 @@ ACL4 = re.compile(r'(http|https)://www.aclweb.org/anthology/(?P<id>[-.\w]+)')
 
 def process_author(name: str):
     name, affiliation = name.strip()[:-1].split(' (', maxsplit=1)
-    return name, affiliation.split('; ')
+    return name, list(set(affiliation.split('; ')))
 
 
 def fetch_papers(year: int):
