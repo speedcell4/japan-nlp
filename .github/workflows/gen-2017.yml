@@ -1,4 +1,4 @@
-name: Generate 2018
+name: Generate 2017
 on:
   push:
     branches:
@@ -21,7 +21,7 @@ jobs:
         run: python3 -m pip install -r requirements.txt
       - name: Build
         run: |
-          python3 -m papers --year 2018
+          python3 -m papers --year 2017
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
