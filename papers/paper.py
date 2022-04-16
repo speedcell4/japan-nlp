@@ -9,8 +9,8 @@ from lxml import etree
 
 from papers.scholar import get_citation_by_id, get_citation_by_title, get_id_by_title
 
-MIT = re.compile(r'https?://direct\.mit\.edu/tacl/article/doi/(?P<id>[.\d]+/\w+)')
-ACL1 = re.compile(r'https?://(www\.)?aclweb\.org/anthology/(\w+/)*(?P<id>[-.\w]+)')
+MIT = re.compile(r'https?://direct\.mit\.edu/tacl/article/doi/(?P<id>[-.\w]+/[-.\w]+)')
+ACL1 = re.compile(r'https?://(www\.)?aclweb\.org/anthology/([-.\w]+/)*(?P<id>[-.\w]+)')
 ACL2 = re.compile(r'https?://(www\.)?aclanthology\.org/(?P<id>[-.\w]+)')
 
 
@@ -19,7 +19,7 @@ def process_author(name: str):
     return name, list(set(affiliation.split('; ')))
 
 
-def fetch_papers(year: int):
+def fetch_papers_from_murawaki_org(year: int):
     response = requests.get(f'https://murawaki.org/misc/japan-nlp-{year}.html')
     if response.status_code == 404:
         exit()
@@ -64,7 +64,7 @@ def fetch_id(data):
 
 
 def fetch_citation(year):
-    data, japan_affiliations = fetch_papers(year)
+    data, japan_affiliations = fetch_papers_from_murawaki_org(year)
     data = fetch_id(data)
 
     avg = Counter()
