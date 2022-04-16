@@ -21,8 +21,6 @@ def process_author(name: str):
 
 def fetch_papers_from_murawaki_org(year: int):
     response = requests.get(f'https://murawaki.org/misc/japan-nlp-{year}.html')
-    if response.status_code == 404:
-        exit()
 
     html = str(response.content, encoding='utf-8')
     html = html.replace(r'<span style="color: grey;">', '')
@@ -40,13 +38,37 @@ def fetch_papers_from_murawaki_org(year: int):
         if url.endswith('.pdf'):
             url = url[:-4]
 
-        data.append((category, [process_author(author) for author in authors], title, url))
+        data.append((category, [process_author(author) for author in authors], title, None, url))
+
+    return data, japan_affiliations
+
+
+def fetch_papers_from_phontron_com(year: int):
+    response = requests.get(f'http://phontron.com/misc/japan-nlp-{year}.html')
+
+    html = str(response.content, encoding='utf-8')
+
+    html = etree.HTML(html)
+
+    japan_affiliations = set(html.xpath('/html/body/table[1]/tr/td[2]//text()'))
+
+    data = []
+    for paper_index, paper in enumerate(html.xpath('/html/body/table[2]/tr')):
+        category = ''
+        authors = [process_author(x) for xs in paper.xpath('td[1]/text()') for x in xs.split('; ')]
+        title, = paper.xpath('td[2]/text()')
+        title, id, url = get_id_by_title(title)
+
+        data.append((category, authors, title, id, url))
 
     return data, japan_affiliations
 
 
 def fetch_id(data):
-    for category, authors, title, url in data:
+    for category, authors, title, id, url in data:
+        if id is not None:
+            yield category, authors, title, id, url
+
         match = re.match(pattern=MIT, string=url)
         if match is not None:
             yield category, authors, title, f'DOI:{match.group("id")}', url
@@ -64,7 +86,10 @@ def fetch_id(data):
 
 
 def fetch_citation(year):
-    data, japan_affiliations = fetch_papers_from_murawaki_org(year)
+    if year in (2014, 2015):
+        data, japan_affiliations = fetch_papers_from_phontron_com(year)
+    else:
+        data, japan_affiliations = fetch_papers_from_murawaki_org(year)
     data = fetch_id(data)
 
     avg = Counter()

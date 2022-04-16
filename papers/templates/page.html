@@ -21,14 +21,19 @@
         <div>
             <p>日本の組織を所属とする者が、{{ year }}年に言語処理のトップカンファレンスもしくはトップ論文誌で発表した論文一覧です (<a href="2021.html">2021年版</a>、<a
                     href="2020.html">2020年版</a>、<a href="2019.html">2019年版</a>、<a href="2018.html">2018年版</a>、<a
-                    href="2017.html">2017年版</a>、<a href="2016.html">2016年版</a>)。対象は
+                    href="2017.html">2017年版</a>、<a href="2016.html">2016年版</a>、<a href="2015.html">2015年版</a>、<a
+                    href="2014.html">2014年版</a>)。対象は
                 TACL、ACL、EMNLP、NAACL、EACL です
                 (Findings は除外)。Industry、Student、Demo 論文も含みます。</p>
             <ul>
                 <li>被引用数A：第一著者に被引用数の半分を配分し、残りの半分は以降の著者で等分。</li>
                 <li>被引用数F：第一著者に被引用数の全部を配分します。</li>
                 <li>一人の著者に複数の所属がある場合は等分。</li>
-                <li>論文データは <a href="https://murawaki.org/misc/japan-nlp-{{ year }}.html">村脇先生のブログ</a> に機械的に従います。
+                {% if year == 2014 or year == 2015 %}
+                    <li>論文データは <a href="http://phontron.com/misc/japan-nlp-{{ year }}.html">Neubig 先生のブログ</a> に機械的に従います。
+                        {% else %}
+                    <li>論文データは <a href="https://murawaki.org/misc/japan-nlp-{{ year }}.html">村脇先生のブログ</a> に機械的に従います。
+                {% endif %}
                 </li>
                 <li>被引用数データは <a href="https://api.semanticscholar.org/graph/v1">Semantic Scholar</a> より。</li>
                 <li>毎週月曜日朝５時に自動更新。</li>
