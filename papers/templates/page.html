@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>日本所属の言語処理論文被引用数ランキング ({{ year }}年)</title>
 </head>
-<body>
 
-<script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-        crossorigin="anonymous"></script>
+<body class="container">
 
-<div class="container bs-docs-container">
-    <div class="row">
+<section class="row">
+    <div class="col-lg-auto">
 
         <h1>日本所属の言語処理論文被引用数ランキング ({{ year }}年)</h1>
         <p class="text-right">最終更新: {{ utcnow }}</p>
@@ -28,74 +24,86 @@
                     href="2017.html">2017年版</a>、<a href="2016.html">2016年版</a>)。対象は
                 TACL、ACL、EMNLP、NAACL、EACL です
                 (Findings は除外)。Industry、Student、Demo 論文も含みます。</p>
-            <p>方針：</p>
             <ul>
-                <li>被引用数A：著者が複数の場合は、第一著者に被引用数の半分を配分し、残りの半分は以降の著者で等分。</li>
-                <li>被引用数F：著者数問わず、第一著者に被引用数の全部を配分します。</li>
+                <li>被引用数A：第一著者に被引用数の半分を配分し、残りの半分は以降の著者で等分。</li>
+                <li>被引用数F：第一著者に被引用数の全部を配分します。</li>
                 <li>一人の著者に複数の所属がある場合は等分。</li>
-                <li>論文データは<a href="https://murawaki.org/misc/japan-nlp-{{ year }}.html">村脇先生のブログ</a>に機械的に従います。</li>
+                <li>論文データは <a href="https://murawaki.org/misc/japan-nlp-{{ year }}.html">村脇先生のブログ</a> に機械的に従います。
+                </li>
                 <li>被引用数データは <a href="https://api.semanticscholar.org/graph/v1">Semantic Scholar</a> より。</li>
                 <li>毎週月曜日朝５時に自動更新。</li>
             </ul>
         </div>
+    </div>
+</section>
 
+<section class="row">
+    <div class="col-lg-6">
+        <h2>所属ごとの被引用数</h2>
         <div>
-            <h2>所属ごとの被引用数</h2>
-
-            <div class="container-fluid" id="citations">
-                <div class="col-md-5">
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th>被引用数A</th>
-                            <th>被引用数F</th>
-                            <th>所属</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {% for name,avg,first in affiliations %}
-                            <tr>
-                                <td style="vertical-align: middle;">{{ avg }}</td>
-                                <td style="vertical-align: middle;">{{ first }}</td>
-                                <td style="vertical-align: middle;">{{ name }}</td>
-                            </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <h2>論文ごとの被引用数</h2>
-
-            <div class="container-fluid" id="papers">
-                <div class="col-md-12">
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th>被引用数</th>
-                            <th>種別</th>
-                            <th>著者 (所属)</th>
-                            <th>論文表題</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {% for citation,category, authors, title, url in papers %}
-                            <tr>
-                                <td style="vertical-align: middle;">{{ citation }}</td>
-                                <td style="vertical-align: middle;">{{ category }}</td>
-                                <td style="vertical-align: middle;">{% for a in authors %} {{ a }}<br>{% endfor %} </td>
-                                <td style="vertical-align: middle;"><a href="{{ url }}">{{ title }}</a></td>
-                            </tr>
-                        {% endfor %}
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>被引用数A</th>
+                    <th>被引用数F</th>
+                    <th>所属</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for name,avg,first in affiliations %}
+                    <tr>
+                        <td style="vertical-align: middle;">{{ avg }}</td>
+                        <td style="vertical-align: middle;">{{ first }}</td>
+                        <td style="vertical-align: middle;">{{ name }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
         </div>
     </div>
-</div>
+</section>
 
+
+<section class="row">
+    <div class="col-lg-auto">
+        <h2>論文ごとの被引用数</h2>
+        <div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>被引用数</th>
+                    <th>種別</th>
+                    <th>著者 (所属)</th>
+                    <th>論文表題</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for citation,category, authors, title, url in papers %}
+                    <tr>
+                        <td style="vertical-align: middle;">{{ citation }}</td>
+                        <td style="vertical-align: middle;">{{ category }}</td>
+                        <td style="vertical-align: middle;">{% for a in authors %} {{ a }}<br>{% endfor %}
+                        </td>
+                        <td style="vertical-align: middle;"><a href="{{ url }}">{{ title }}</a></td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
