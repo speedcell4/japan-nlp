@@ -50,7 +50,7 @@ def fetch_papers_from_phontron_com(year: int):
 
     html = etree.HTML(html)
 
-    japan_affiliations = set(html.xpath('/html/body/table[1]/tr/td[2]//text()'))
+    japan_affiliations = set()
 
     data = []
     for paper_index, paper in enumerate(html.xpath('/html/body/table[2]/tr')):
@@ -58,6 +58,9 @@ def fetch_papers_from_phontron_com(year: int):
         authors = [process_author(x) for xs in paper.xpath('td[1]/text()') for x in xs.split('; ')]
         title, = paper.xpath('td[2]/text()')
         title, id, url = get_id_by_title(title)
+
+        for _, affiliations in authors:
+            japan_affiliations.update(affiliations)
 
         data.append((category, authors, title, id, url))
 
@@ -68,21 +71,21 @@ def fetch_id(data):
     for category, authors, title, id, url in data:
         if id is not None:
             yield category, authors, title, id, url
-
-        match = re.match(pattern=MIT, string=url)
-        if match is not None:
-            yield category, authors, title, f'DOI:{match.group("id")}', url
         else:
-            for pattern in [ACL1, ACL2]:
-                match = re.match(pattern=pattern, string=url)
-                if match is not None:
-                    break
-
+            match = re.match(pattern=MIT, string=url)
             if match is not None:
-                yield category, authors, title, f'ACL:{match.group("id")}', url
+                yield category, authors, title, f'DOI:{match.group("id")}', url
             else:
-                title, id, url = get_id_by_title(title=title)
-                yield category, authors, title, id, url
+                for pattern in [ACL1, ACL2]:
+                    match = re.match(pattern=pattern, string=url)
+                    if match is not None:
+                        break
+
+                if match is not None:
+                    yield category, authors, title, f'ACL:{match.group("id")}', url
+                else:
+                    title, id, url = get_id_by_title(title=title)
+                    yield category, authors, title, id, url
 
 
 def fetch_citation(year):
